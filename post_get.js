@@ -6,7 +6,7 @@ var request = http.request({
   port: 443,
   method: 'POST',
   headers: {
-    'Authorization': clientId + ':' + signature(endpoint, postBody), // Don't worry about this line, ignore it for now
+    'Authorization': clientId + ':' + signature(endpoint, postBody), 
     'Content-Type': 'application/json',
     'Content-Length': postBody.length
   }
